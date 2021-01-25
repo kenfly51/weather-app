@@ -1,14 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const WeatherItem = ({ date, min, max }) => {
+const WeatherItem = (item) => {
+  const { date, min, max } = item;
   return <div>weather item</div>;
 };
 
 WeatherItem.propTypes = {
-  date: PropTypes.instanceOf(Date).isRequired,
-  min: PropTypes.number.isRequired,
-  max: PropTypes.number.isRequired,
+  item: PropTypes.shape({
+    date: PropTypes.instanceOf(Date).isRequired,
+    min: PropTypes.number.isRequired,
+    max: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default WeatherItem;

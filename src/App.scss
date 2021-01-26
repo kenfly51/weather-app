@@ -3,6 +3,25 @@
 .app {
   $base-unit: 4px;
 
+  @keyframes search-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  margin-top: $base-unit * 10;
+
+  @media (prefers-reduced-motion: no-preference) {
+    .search-icon {
+      .searching {
+        animation: search-spin infinite 1s linear;
+      }
+    }
+  }
+
   .weather-item {
     text-align: center;
     align-items: center;

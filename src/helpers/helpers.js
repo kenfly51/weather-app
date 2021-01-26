@@ -13,3 +13,7 @@ export const getDayName = (date) => {
   }
   return "";
 };
+
+export const formatTemp = (value) => {
+  return value && parseInt(value);
+};

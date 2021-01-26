@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import { getStateImage } from "../helpers/paths";
-import { getDayName } from "../helpers/helpers";
+import { getDayName, formatTemp } from "../helpers/helpers";
 
 const WeatherItem = ({ item }) => {
-  const { date, min, max, state, stateAbbr, temp } = item;
+  const { date, min, max, state, stateAbbr } = item;
 
   const dayOfWeek = getDayName(date);
   return (
@@ -19,8 +19,8 @@ const WeatherItem = ({ item }) => {
         <Card.Title>{dayOfWeek}</Card.Title>
         <Card.Subtitle>{state}</Card.Subtitle>
         <div className="temp-details">
-          <div>{`min: ${min}`}</div>
-          <div>{`max: ${max}`}</div>
+          <div>{`min: ${formatTemp(min)}`}</div>
+          <div>{`max: ${formatTemp(max)}`}</div>
         </div>
       </Card.Body>
     </Card>

@@ -18,7 +18,7 @@ const App = () => {
   };
 
   return (
-    <Container>
+    <Container className="app">
       <Row>
         <Col sm={4} xs={12}>
           <SearchInput onSearchResult={setForeCast} />

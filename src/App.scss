@@ -1,1 +1,20 @@
 @import "~bootstrap/scss/bootstrap";
+
+.app {
+  $base-unit: 4px;
+
+  .weather-item {
+    text-align: center;
+    align-items: center;
+    margin-top: $base-unit * 4;
+
+    .state-image {
+      width: 70%;
+      padding-top: $base-unit * 4;
+    }
+
+    .temp-details {
+      margin-top: $base-unit * 4;
+    }
+  }
+}

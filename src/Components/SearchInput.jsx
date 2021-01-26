@@ -40,7 +40,7 @@ const SearchInput = ({ onSearchResult }) => {
           />
         </InputGroup.Text>
       </InputGroup.Prepend>
-      <FormControl placeholder="Search" onKeyUp={onKeyUp} />
+      <FormControl data-testid="search-input" placeholder="Search" onKeyUp={onKeyUp} />
     </InputGroup>
   );
 };

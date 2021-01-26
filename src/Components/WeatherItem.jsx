@@ -32,7 +32,6 @@ WeatherItem.propTypes = {
     date: PropTypes.instanceOf(Date).isRequired,
     min: PropTypes.number.isRequired,
     max: PropTypes.number.isRequired,
-    temp: PropTypes.number.isRequired,
     state: PropTypes.string.isRequired,
     stateAbbr: PropTypes.string.isRequired,
   }).isRequired,

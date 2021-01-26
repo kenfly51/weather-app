@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherItem should render WeatherItem correctly 1`] = `
+<div>
+  <div
+    class="weather-item card"
+  >
+    <img
+      class="card-img-top state-image"
+      src="https://www.metaweather.com/static/img/weather/ste.svg"
+    />
+    <div
+      class="card-body"
+    >
+      <div
+        class="card-title h5"
+      >
+        Tuesday
+      </div>
+      <div
+        class="card-subtitle h6"
+      >
+        state
+      </div>
+      <div
+        class="temp-details"
+      >
+        <div>
+          min: 11
+        </div>
+        <div>
+          max: 11
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
